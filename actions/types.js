@@ -1,0 +1,26 @@
+//
+// CONTRACTS TYPES
+//
+
+export const GET_ALL_COUNTRIES = 'GET_ALL_COUNTRIES';
+export const GET_ALL_HOTELS = 'GET_ALL_HOTELS';
+export const GET_ALL_CLINICS = 'GET_ALL_CLINICS';
+
+export const GET_DOCOTRS = 'GET_DOCOTRS';
+export const GET_DOCOTR = 'GET_DOCOTR';
+
+export const CREATE_APPOINT = 'CREATE_APPOINT';
+export const CREATE_BOOKING = 'CREATE_BOOKING';
+export const CREATE_COUNTRY = 'CREATE_COUNTRY';
+export const CREATE_CITY = 'CREATE_CITY';
+export const CREATE_HOTEL = 'CREATE_HOTEL';
+
+export const UPDATE_COUNTRY = 'UPDATE_COUNTRY';
+export const UPDATE_CITY = 'UPDATE_CITY';
+export const UPDATE_HOTEL = 'UPDATE_HOTEL';
+
+export const DELETE_COUNTRY = 'DELETE_COUNTRY';
+export const DELETE_CITY = 'DELETE_CITY';
+export const DELETE_HOTEL = 'DELETE_HOTEL';
+
+export const SHOW_ERRORS = 'SHOW_ERRORS';

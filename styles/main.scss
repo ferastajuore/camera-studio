@@ -1,0 +1,14 @@
+// Libraries
+@import 'bulma/css/bulma.css';
+// @import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;1,700&display=swap");
+
+// Global
+@import './abstracts/variables';
+
+@import './base/base';
+
+@import './base/typography';
+
+@import './components/layout';
+@import './components/components';
+@import './components/UI';

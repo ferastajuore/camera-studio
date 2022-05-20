@@ -1,0 +1,43 @@
+/**
+//  Colors
+**/
+
+// $color-primary: #014365;
+$color-primary: #2a3550;
+$color-primary-light: #01297080;
+$color-primary-dark: #03213d;
+
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #f4f2f2;
+$color-grey-light-3: #f0eeee;
+$color-grey-light-4: #ccc;
+
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #999;
+
+$color-black: #000;
+
+/**
+//  Fonts
+**/
+
+$default-font-size: 1.6rem;
+
+/**
+//  Shadows
+**/
+
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+/**
+//  Secreens
+**/
+
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 30em; // 480px
+$bp-smallest-xs: 20em; // 320px

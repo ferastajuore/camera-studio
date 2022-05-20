@@ -1,0 +1,221 @@
+////////////////////////////////////////
+// Header section
+
+.header {
+	position: relative;
+	// position: absolute;
+	// right: 0;
+	width: 100%;
+	min-height: 100vh;
+	padding: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #111;
+	transition: 0.5s;
+	z-index: 2;
+
+	&__btn-booking {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 12%;
+	}
+}
+.screenVideo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.6;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $color-primary;
+	mix-blend-mode: overlay;
+}
+
+.center {
+	z-index: 10;
+	color: $color-grey-light-1;
+}
+
+.heading-text {
+	text-transform: uppercase;
+
+	backface-visibility: hidden;
+	margin-bottom: 6rem;
+
+	&--main {
+		display: block;
+		font-size: 6rem;
+		font-weight: 400;
+		letter-spacing: 3.5rem;
+
+		animation-name: moveInLeft;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;
+	}
+
+	&--sub {
+		display: block;
+		font-size: 2rem;
+		font-weight: 700;
+		letter-spacing: 1.75rem;
+		animation: moveInRight 1s ease-out;
+	}
+}
+
+.header-secondary {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+
+.header-social {
+	display: flex;
+
+	& li {
+		margin: 0 1.5rem;
+
+		& :hover {
+			overflow: visible;
+			transform: translateY(-3px);
+			box-shadow: $shadow-dark;
+			transition: all 0.2s;
+		}
+
+		& a:hover {
+			color: $color-grey-light-1;
+		}
+	}
+}
+
+////////////////////////////////////////
+// Services section
+
+.services {
+	& .card {
+		margin-bottom: 3rem;
+	}
+
+	& .content {
+		padding: 2rem;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 700;
+		letter-spacing: 0.07rem;
+		color: $color-grey-light-1;
+		background-color: $color-grey-dark-1;
+	}
+}
+
+////////////////////////////////////////
+// About us section
+
+.about-us {
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary, 0.8),
+			rgba($color-primary-dark, 0.8)
+		),
+		url(../../public/assets/images/backgound-about.jpg);
+	height: 40rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	// direction: rtl;
+	margin-bottom: 10rem;
+	padding: 6rem 0;
+
+	& .header-text {
+		margin: 5rem 0;
+	}
+}
+
+.paragraphs {
+	padding: 0 6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& .paragraph-text {
+		color: $color-grey-light-1;
+		width: 80%;
+		text-align: center;
+	}
+}
+
+////////////////////////////////////////
+// Team section
+
+.team {
+	background-color: $color-grey-light-4;
+}
+
+.team-members {
+	justify-content: center;
+	align-items: center;
+}
+
+.member {
+	margin: 0 2.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.member-avata {
+	width: 15rem !important;
+	height: 15rem !important;
+	margin: 2.5rem 0;
+}
+
+.member-name {
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.member-description {
+	color: $color-primary-dark;
+}
+
+////////////////////////////////////////
+// Sing up section
+.singUp,
+.appointment {
+	width: 50%;
+	margin: auto;
+
+	& .row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	& .select {
+		width: 100%;
+	}
+
+	& .select select:not([multiple]) {
+		width: 100%;
+	}
+	& .select::after {
+		right: inherit !important;
+		left: 1.125em !important;
+	}
+}
