@@ -45,7 +45,7 @@ const Services = () => {
 								/>
 							</figure>
 							<div className="content">
-								Lorem ipsum dolor sit amet,
+								Lopx ipsum dolor sit amet,
 							</div>
 						</div>
 					</div>
@@ -62,7 +62,7 @@ const Services = () => {
 								/>
 							</figure>
 							<div className="content">
-								Lorem ipsum dolor sit amet,
+								Lopx ipsum dolor sit amet,
 							</div>
 						</div>
 					</div>
@@ -79,7 +79,7 @@ const Services = () => {
 								/>
 							</figure>
 							<div className="content">
-								Lorem ipsum dolor sit amet,
+								Lopx ipsum dolor sit amet,
 							</div>
 						</div>
 					</div>
@@ -96,7 +96,7 @@ const Services = () => {
 								/>
 							</figure>
 							<div className="content">
-								Lorem ipsum dolor sit amet,
+								Lopx ipsum dolor sit amet,
 							</div>
 						</div>
 					</div>
@@ -113,7 +113,7 @@ const Services = () => {
 								/>
 							</figure>
 							<div className="content">
-								Lorem ipsum dolor sit amet,
+								Lopx ipsum dolor sit amet,
 							</div>
 						</div>
 					</div>

@@ -7,19 +7,33 @@
 	// right: 0;
 	width: 100%;
 	min-height: 100vh;
-	padding: 10rem;
+	padding: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: #111;
 	transition: 0.5s;
 	z-index: 2;
-
+	@include resp(lg) {
+		min-height: 90vh;
+	}
 	&__btn-booking {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: center;
-		width: 12%;
+		min-width: 10%;
+		@include resp(lg) {
+			max-width: 18%;
+			justify-content: center;
+		}
+		@include resp(md) {
+			max-width: 35%;
+			justify-content: center;
+		}
+
+		@include resp(xsm) {
+			max-width: 50%;
+		}
 	}
 }
 .screenVideo {
@@ -49,27 +63,54 @@
 
 .heading-text {
 	text-transform: uppercase;
-
 	backface-visibility: hidden;
-	margin-bottom: 6rem;
-
+	text-align: center;
+	margin-bottom: 60px;
+	@include resp(lg) {
+		margin-bottom: 30%;
+	}
 	&--main {
 		display: block;
-		font-size: 6rem;
+		font-size: 60px;
 		font-weight: 400;
-		letter-spacing: 3.5rem;
-
+		letter-spacing: 4.5vw;
 		animation-name: moveInLeft;
 		animation-duration: 1s;
 		animation-timing-function: ease-out;
+		@include resp(lg) {
+			font-size: 7vw;
+		}
+		@include resp(md) {
+			font-size: 6vw;
+			// letter-spacing: 27px;
+		}
+		@include resp(sm) {
+			font-size: 40px;
+			// letter-spacing: 23px;
+		}
+		@include resp(xsm) {
+			font-size: 11vw;
+		}
 	}
 
 	&--sub {
 		display: block;
-		font-size: 2rem;
+		font-size: 20px;
 		font-weight: 700;
-		letter-spacing: 1.75rem;
+		letter-spacing: 1.4vw;
 		animation: moveInRight 1s ease-out;
+		@include resp(lg) {
+			font-size: 18px;
+		}
+		@include resp(md) {
+			font-size: 17px;
+		}
+		@include resp(sm) {
+			font-size: 3.5vw;
+		}
+		@include resp(xsm) {
+			font-size: 4.6vw;
+		}
 	}
 }
 
@@ -77,18 +118,25 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 4rem;
+	padding: 40px;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	width: 100%;
+	@include resp(lg) {
+		flex-direction: column-reverse;
+		align-items: center;
+		bottom: 10%;
+	}
 }
 
 .header-social {
 	display: flex;
-
+	@include resp(lg) {
+		margin-top: 45px;
+	}
 	& li {
-		margin: 0 1.5rem;
+		margin: 0 15px;
 
 		& :hover {
 			overflow: visible;
@@ -108,17 +156,34 @@
 
 .services {
 	& .card {
-		margin-bottom: 3rem;
+		margin-bottom: 30px;
+		@include resp(lg) {
+			min-width: 100%;
+		}
+		@include resp(xsm) {
+			margin-bottom: 20px;
+		}
 	}
 
 	& .content {
-		padding: 2rem;
+		padding: 10px;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 20px;
 		font-weight: 700;
-		letter-spacing: 0.07rem;
+		letter-spacing: 0.7px;
 		color: $color-grey-light-1;
 		background-color: $color-grey-dark-1;
+		@include resp(lg) {
+			padding: 7px;
+			font-size: 17px;
+		}
+		@include resp(md) {
+			font-size: 15px;
+			padding: 3.3px;
+		}
+		@include resp(xsm) {
+			font-size: 4.5vw;
+		}
 	}
 }
 
@@ -132,30 +197,53 @@
 			rgba($color-primary-dark, 0.8)
 		),
 		url(../../public/assets/images/backgound-about.jpg);
-	height: 40rem;
+	height: 400px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	// direction: rtl;
-	margin-bottom: 10rem;
-	padding: 6rem 0;
-
+	margin-bottom: 100px;
+	padding: 90px 0;
+	@include resp(lg) {
+		min-height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+	}
 	& .header-text {
-		margin: 5rem 0;
+		margin: 50px 0;
+		@include resp(lg) {
+			margin: 20px;
+		}
+		@include resp(xsm) {
+			margin: 10px;
+		}
 	}
 }
 
 .paragraphs {
-	padding: 0 6rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
+	padding: 0 40px;
+	@include resp(lg) {
+		font-size: 17px;
+		word-wrap: break-word;
+	}
+	@include resp(md) {
+		font-size: 16px;
+	}
+	@include resp(xsm) {
+		font-size: 15px;
+	}
 	& .paragraph-text {
 		color: $color-grey-light-1;
 		width: 80%;
 		text-align: center;
+		margin: auto;
+		@include resp(md) {
+			width: 100%;
+		}
 	}
 }
 
@@ -172,7 +260,7 @@
 }
 
 .member {
-	margin: 0 2.5rem;
+	margin: 0 25px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -180,13 +268,21 @@
 }
 
 .member-avata {
-	width: 15rem !important;
-	height: 15rem !important;
-	margin: 2.5rem 0;
+	width: 150px !important;
+	height: 150px !important;
+	margin: 25px 0;
+	@include resp(lg) {
+		width: 140px !important;
+		height: 140px !important;
+	}
+	@include resp(md) {
+		width: 130px !important;
+		height: 130px !important;
+	}
 }
 
 .member-name {
-	font-size: 2rem;
+	font-size: 20px;
 	font-weight: 700;
 	text-transform: capitalize;
 }
@@ -199,7 +295,7 @@
 // Sing up section
 .singUp,
 .appointment {
-	width: 50%;
+	width: 100%;
 	margin: auto;
 
 	& .row {
@@ -216,6 +312,6 @@
 	}
 	& .select::after {
 		right: inherit !important;
-		left: 1.125em !important;
+		left: 11.25px !important;
 	}
 }

@@ -22,21 +22,20 @@ $color-black: #000;
 //  Fonts
 **/
 
-$default-font-size: 1.6rem;
+$default-font-size: 16px;
 
 /**
 //  Shadows
 **/
 
-$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+$shadow-dark: 0 20px 60px rgba(0, 0, 0, 0.3);
+$shadow-light: 0 20px 50px rgba(0, 0, 0, 0.06);
 
 /**
 //  Secreens
 **/
-
-$bp-largest: 75em; // 1200px
-$bp-large: 68.75em; // 1100px
+$bp-xl: 75em; // 1200px
+$bp-large: 64.25em; // 1100px
 $bp-medium: 56.25em; // 900px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 30em; // 480px

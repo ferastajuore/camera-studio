@@ -9,14 +9,14 @@ const About = () => {
 			</div>
 			<div className="paragraphs">
 				<p className="paragraph-text">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Lopx ipsum, dolor sit amet consectetur adipisicing elit.
 					Pariatur voluptas architecto nemo, minus nihil ratione
 					placeat harum excepturi ea vitae et ad consequatur error
-					iusto, reprehenderit incidunt dolorem. Quis, architecto!
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					Pariatur voluptas architecto nemo, minus nihil ratione
-					placeat harum excepturi ea vitae et ad consequatur error
-					iusto, reprehenderit incidunt dolorem. Quis, architecto!
+					iusto, reprehenderit incidunt dolopx. Quis, architecto! Lopx
+					ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+					voluptas architecto nemo, minus nihil ratione placeat harum
+					excepturi ea vitae et ad consequatur error iusto,
+					reprehenderit incidunt dolopx. Quis, architecto!
 				</p>
 			</div>
 		</section>
