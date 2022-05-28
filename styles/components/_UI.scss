@@ -156,3 +156,28 @@
 		border-radius: 0.5rem;
 	}
 }
+
+.dorpdown {
+	background-color: $color-grey-light-3;
+	border: 1px solid $color-grey-dark-3;
+	color: $color-grey-dark-1;
+	position: absolute;
+	right: 0;
+	width: 90%;
+	padding: 10px;
+	border-radius: 2px 2px 10px 10px;
+	margin: 0 10px;
+	z-index: 10;
+	box-shadow: $shadow-dark;
+	transition: all 0.3s;
+
+	display: none;
+
+	&-item {
+		margin: 10px 5px;
+	}
+
+	&.is-active {
+		display: block;
+	}
+}
