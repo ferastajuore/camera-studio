@@ -10,7 +10,7 @@ const Services = () => {
 			<div className="header-text">
 				<TextHeader>خدماتنا</TextHeader>
 			</div>
-			<div className="services columns is-multiline is-mobile is-flex-direction-row-reverse">
+			<div className="services columns is-multiline is-flex-direction-row-reverse">
 				{services.length !== 0 ? (
 					services.map((setData, i) => (
 						<div key={i} className="column is-one-third">
