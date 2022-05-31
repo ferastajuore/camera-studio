@@ -34,17 +34,17 @@ const Header = () => {
 					<ul className="header-social">
 						<li>
 							<a href="">
-								<BsFacebook size="2.5rem" />
+								<BsFacebook size="25px" />
 							</a>
 						</li>
 						<li>
 							<a href="">
-								<BsInstagram size="2.5rem" />
+								<BsInstagram size="25px" />
 							</a>
 						</li>
 						<li>
 							<a href="">
-								<BsSnapchat size="2.5rem" />
+								<BsSnapchat size="25px" />
 							</a>
 						</li>
 					</ul>
@@ -52,7 +52,7 @@ const Header = () => {
 						onClick={() => handleOnClick()}
 						className="btn btn--info header__btn-booking"
 					>
-						<HiOutlineArrowNarrowLeft size="1.8rem" /> حجز الان
+						<HiOutlineArrowNarrowLeft size="17px" /> حجز الان
 					</button>
 				</div>
 			</div>
