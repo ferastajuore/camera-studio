@@ -63,6 +63,10 @@
 		justify-content: space-between;
 		align-items: center;
 		color: $color-grey-light-1;
+		@include resp(xsm) {
+			flex-direction: column;
+			// text-align: center;
+		}
 	}
 
 	&-navbar {
@@ -75,7 +79,8 @@
 				font-size: 13.5px;
 			}
 			@include resp(xsm) {
-				font-size: 12px;
+				font-size: 14px;
+				margin-bottom: 35px;
 			}
 
 			&:not(:last-child) {
@@ -102,10 +107,13 @@
 	&-contact > li {
 		display: flex;
 		align-items: center;
+
 		@include resp(lg) {
 			font-size: 13.5px;
 		}
-
+		@include resp(xsm) {
+			justify-content: center;
+		}
 		&:not(:last-child) {
 			margin-bottom: 15px;
 		}
@@ -119,7 +127,7 @@
 	&-social {
 		display: flex;
 		@include resp(xsm) {
-			display: block;
+			margin-top: 30px;
 		}
 		& > li {
 			font-size: 20px;
@@ -129,7 +137,7 @@
 				margin: 0 8px;
 			}
 			@include resp(xsm) {
-				margin: 17px 0;
+				margin: 0 10px;
 			}
 
 			&:hover {
